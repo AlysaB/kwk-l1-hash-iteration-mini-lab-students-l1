@@ -1,3 +1,25 @@
+summer_olympics = {
+  :Sydney => 2000,
+  :Athens => 2004,
+  :Beijing => 2008,
+  :London => 2012
+}
+
+summer_olympics[:Atlanta] = 1996
+
+summer_olympics_places = summer_olympics.keys
+summer_olympics_year = summer_olympics.values
+summer_olympics.each do |summer_olympics_places, summer_olympics_year|
+  puts "The #{summer_olympics_places} summer olympics took place in the year #{summer_olympics_year}"
+end 
+
+uppcased_cities = []
+summer_olympics.each_key do |key|
+  uppcased_cities.push(key)
+end
+ puts uppcased_cities
+
+
 
 def create_olympics_hash
   # Implement this method so that it returns a hash with the data provided on README.md
